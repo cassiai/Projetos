@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(237, 247, 227);
+}
+
+h1 {
+    text-align: center;
+    background-image: linear-gradient(rgb(87, 226, 196), rgb(185, 221, 151));
+    padding: 2rem;
+
+}
+
+h4 {
+    text-align: justify;
+    font-size: 1.2rem;
+    margin: 20px 20px 20px 30px;
+    padding: 2rem;
+    border: solid 2px;
+}
+
+
+.titulo {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    margin-top: 30px;
+    background-color: rgb(196, 194, 194);
+}
+
+#matriz-intersecao {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: bisque;
+    padding: 5px;
+}
+
+#matriz-primo,
+#matriz-inteira {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+#matriz-par {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.matriz-par-item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px;
+    background-color:rgb(104, 138, 233);;
+}
+
+.matriz-primo-item {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    margin: 5px;
+    background-color: rgb(230, 251, 144);
+}
+
+#matrizInteiraFormatada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.matrizInteiraPar {
+    background-color: rgb(104, 138, 233);
+}
+
+.matrizInteiraPrimo {
+    background-color: rgb(230, 251, 144);
+}
+
+.legenda {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.legenda-item {
+    margin: 0 10px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.legenda-par {
+    background-color:rgb(104, 138, 233);
+}
+
+.legenda-primo {
+    background-color: rgb(230, 251, 144);
+}
+
+td {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+}

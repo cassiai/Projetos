@@ -1,0 +1,1128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Exercícios de JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="Exercicios.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header></header>
+	<nav>
+		<ul>
+			<li><a href="#exercicio_1">Exercício 1</a></li>
+			<li><a href="#exercicio_2">Exercício 2</a></li>
+			<li><a href="#exercicio_3">Exercício 3</a></li>
+			<li><a href="#exercicio_4">Exercício 4</a></li>
+			<li><a href="#exercicio_5">Exercício 5</a></li>
+			<li><a href="#exercicio_6">Exercício 6</a></li>
+			<li><a href="#exercicio_7">Exercício 7</a></li>
+			<li><a href="#exercicio_8">Exercício 8</a></li>
+			<li><a href="#exercicio_9">Exercício 9</a></li>
+			<li><a href="#exercicio_10">Exercício 10</a></li>
+			<li><a href="#exercicio_11">Exercício 11</a></li>
+			<li><a href="#exercicio_12">Exercício 12</a></li>
+			<li><a href="#exercicio_13">Exercício 13</a></li>
+			<li><a href="#exercicio_14">Exercício 14</a></li>
+			<li><a href="#exercicio_15">Exercício 15</a></li>
+			<li><a href="#exercicio_16">Exercício 16</a></li>
+			<li><a href="#exercicio_17">Exercício 17</a></li>
+			<li><a href="#exercicio_18">Exercício 18</a></li>
+			<li><a href="#exercicio_19">Exercício 19</a></li>
+			<li><a href="#exercicio_20">Exercício 20</a></li>
+			<li><a href="#exercicio_21">Exercício 21</a></li>
+			<li><a href="#exercicio_22">Exercício 22</a></li>
+			<li><a href="#exercicio_23">Exercício 23</a></li>
+			<li><a href="#exercicio_24">Exercício 24</a></li>
+			<li><a href="#exercicio_25">Exercício 25</a></li>
+
+		</ul>
+	</nav>
+	</header>
+	<div class="main">
+		<h1>Exercícios de JavaScript</h1>
+		<div class="exercicio" id="exercicio_1">
+			<h2>Exercício 1:</h2>
+			<h3>Apresente a mensagem “Testando o Javascript”</h3>
+		</div>
+		<div class="respostas">
+			<script>
+				document.write("Testando Javascript <br>")
+			</script>
+		</div>
+
+		<div class="exercicio" id="exercicio_2">
+			<h2>Exercício 2:</h2>
+			<h3>Apresente as mensagens “Exercitando algoritmos II” e também “com Javascript” (uma abaixo da outra).</h3>
+		</div>
+		<div class="respostas">
+			<script>
+				document.write("Exercitando Algoritmos <br>")
+				document.write("com Javascript <br>")
+			</script>
+		</div>
+
+		<div class="exercicio" id="exercicio_3">
+			<h2>Exercício 3:</h2>
+			<h3>Ler uma variável e apresentar seu triplo.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_1">
+				<label for="numero">Digite um número:</label>
+				<input type="text" id="numero" oninput="exibirTriplo()">
+				<div id="resposta_exercicio_1"></div>
+				<br>
+				<button id="reset_1" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_4">
+			<h2>Exercício 4:</h2>
+			<h3>Ler uma variável e apresentar 60% da mesma.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_2">
+				<label for="n1">Digite um número:</label>
+				<input type="text" id="n1" oninput="exibirPorcentagem()">
+				<div id="resposta_exercicio_2"></div>
+				<button id="reset_2" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_5">
+			<h2>Exercício 5:</h2>
+			<h3>Perguntar o nome e o valor de um produto e apresentar o novo valor reajustado em 14,7%.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_3">
+				<label for="nomeProduto">Digite o nome do produto:</label>
+				<input type="text" id="nomeProduto">
+				<br>
+				<label for="valorProduto">Digite o valor do produto:</label>
+				<input type="text" id="valorProduto">
+				<div id="resposta_exercicio_3"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="exibirNovoValor()">Calcular</button>
+					<button id="reset_3" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_6">
+			<h2>Exercício 6:</h2>
+			<h3>Calcular e apresentar o volume de um cone. Fórmula: VCN = ((3.1416 * R²) / 3) * H.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_4">
+				<label for="raio">Digite o raio:</label>
+				<input type="text" id="raio">
+				<br>
+				<label for="altura">Digite a altura:</label>
+				<input type="text" id="altura" oninput="exibirVolume()">
+				<div id="resposta_exercicio_4"></div>
+				<button id="reset_4" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_7">
+			<h2>Exercicio 7:</h2>
+			<h3>Solicite um valor inteiro e apresente a mensagem: NÚMERO PAR ou NÚMERO ÍMPAR.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_5">
+				<label for="numero1">Digite um número:</label>
+				<input type="text" id="numero1" oninput="par()">
+				<div id="resposta_exercicio_5"></div>
+				<button id="reset_5" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_8">
+			<h2>Exercicio 8:</h2>
+			<h3>Solicite 3 notas, calcule a média e apresente se o aluno está APROVADO ou
+				REPROVADO, considerando média mínima 6,0 para aprovação.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_6">
+				<label for="nota 1">Digite a primeira nota:</label>
+				<input type="text" id="nota1">
+				<br>
+				<label for="nota 2">Digite a segunda nota:</label>
+				<input type="text" id="nota2">
+				<br>
+				<label for="nota 3">Digite a terceira nota:</label>
+				<input type="text" id="nota3" oninput="aprovado()">
+				<div id="resposta_exercicio_6"></div>
+				<button id="reset_6" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_9">
+			<h2>Exercicio 9: </h2>
+			<h3>Solicitar o nome, idade, sexo e salário de uma pessoa. Posteriormente, faça o reajuste do salário de
+				acordo com as condições abaixo e posteriormente apresente o novo salário (com reajuste): <br>
+				- Acima de 50 anos, reajuste de 35% <br>
+				- Mulheres com até 24 anos, reajuste de 18% <br>
+				- Homens com até 27 anos, reajuste de 17,5% <br>
+				- Mulheres entre 25 e 50 anos, reajuste de 23% <br>
+				- Homens entre 28e 38 anos, reajuste de 21% <br>
+				- Homens entre 39 e 50 anos, reajuste de 23%</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_7">
+				<label for="nomePessoa1">Digite o nome:</label>
+				<input type="text" id="nomePessoa1">
+				<br>
+				<label for="idade">Digite a idade:</label>
+				<input type="text" id="idade">
+				<br>
+				<label for="sexo">Digite o sexo:</label>
+				<input type="text" id="sexo">
+				<br>
+				<label for="salario">Digite o salário:</label>
+				<input type="text" id="salario" oninput="salario()">
+				<div id="resposta_exercicio_7"></div>
+				<button id="reset_7" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_10">
+			<h2>Exercicio 10:</h2>
+			<h3>Solicite dois valores e apresente a multiplicação de um pelo outro utilizando apenas um laço de
+				repetição (sem o operador aritmético de multiplicação).</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_8">
+				<label for="valor1">Digite o valor 1:</label>
+				<input type="text" id="valor1">
+				<br>
+				<label for="valor2">Digite a valor 2:</label>
+				<input type="text" id="valor2" oninput="multiplica()">
+				<div id="resposta_exercicio_8"></div>
+				<button id="reset_8" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_11">
+			<h2>Exercicio 11:</h2>
+			<h3>Solicite um valor inteiro e apresente se o mesmo é ou não um número PRIMO.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_9">
+				<label for="num">Digite um número:</label>
+				<input type="text" id="num" oninput="primo()">
+				<div id="resposta_exercicio_9"></div>
+				<button id="reset_9" type="reset">Reset</button>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_12">
+			<h2>Exercicio 12:</h2>
+			<h3>Solicite dois valores inteiros (o segundo deverá ser maior que o primeiro) e apresente todos os números
+				PARES do intervalo (inclusive eles mesmos) utilizando o laço FOR.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_10">
+				<label for="num1">Digite um número:</label>
+				<input type="text" id="num1">
+				<br>
+				<label for="num2">Digite um número:</label>
+				<input type="text" id="num2">
+				<div id="resposta_exercicio_10"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="parComFor()">Mostrar Pares</button>
+					<button id="reset_10" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_13">
+			<h2>Exercicio 13:</h2>
+			<h3>Solicite dois valores inteiros (o segundo deverá ser maior que o primeiro) e apresente todos os números
+				PARES do intervalo (inclusive eles mesmos) utilizando o laço WHILE.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_11">
+				<label for="num3">Digite um número:</label>
+				<input type="text" id="num3">
+				<br>
+				<label for="num4">Digite um número:</label>
+				<input type="text" id="num4" oninput="parComWhile()">
+				<div id="resposta_exercicio_11"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="parComWhile()">Mostrar Pares</button>
+					<button id="reset_11" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_14">
+			<h2>Exercicio 14:</h2>
+			<h3>Solicite dois valores inteiros (o segundo deverá ser maior que o primeiro) e apresente todos os números
+				PARES do intervalo (inclusive eles mesmos)
+				utilizando o laço DO - WHILE.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_12">
+				<label for="num5">Digite um número:</label>
+				<input type="text" id="num5">
+				<br>
+				<label for="num6">Digite um número:</label>
+				<input type="text" id="num6">
+				<div id="resposta_exercicio_12"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="parComDoWhile()">Mostrar Pares</button>
+					<button id="reset_12" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_15">
+			<h2>Exercicio 15:</h2>
+			<h3>Construa um programa em Javascript que solicite um valor entre 1 e 12 (validando a entrada) e apresente
+				o mês correspondente por extenso.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_13">
+				<label for="meses">Escolha um mês:</label>
+				<select id="meses">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+					<option value="6">6</option>
+					<option value="7">7</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="10">10</option>
+					<option value="11">11</option>
+					<option value="12">12</option>
+				</select>
+				<br>
+				<div id="resposta_exercicio_13"></div>
+				<div id="mais_um_botao">
+					<button id="enviar" type="button" onclick="nomeMes()">Enviar</button>
+					<button id="reset_13" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_16">
+			<h2>Exercicio 16:</h2>
+			<h3>Desenvolva um programa em Javascript que solicite 4 números e posteriormente apresente o maior número
+				informado.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_14">
+				<label for="num7">Digite um número:</label>
+				<input type="text" id="num7">
+				<br>
+				<label for="num8">Digite um número:</label>
+				<input type="text" id="num8">
+				<br>
+				<label for="num9">Digite um número:</label>
+				<input type="text" id="num9">
+				<br>
+				<label for="num10">Digite um número:</label>
+				<input type="text" id="num10">
+				<br>
+				<div id="resposta_exercicio_14"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="maiorNumero()">Verificar</button>
+					<button id="reset_14" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_17">
+			<h2>Exercicio 17:</h2>
+			<h3>Construa um programa em Javascript que solicite 6 nomes e posteriormente apresente o maior nome da
+				lista.</h3>
+		</div>
+		<div class="respostas">
+			<form id="form">
+				<label for="nome1">Digite um nome:</label>
+				<input type="text" id="nome1">
+				<br>
+				<label for="nome2">Digite um nome:</label>
+				<input type="text" id="nome2">
+				<br>
+				<label for="nome3">Digite um nome:</label>
+				<input type="text" id="nome3">
+				<br>
+				<label for="nome4">Digite um nome:</label>
+				<input type="text" id="nome4">
+				<br>
+				<div id="resposta_exercicio_15"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="maiorNome()">Verificar</button>
+					<button id="reset_15" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_18">
+			<h2>Exercicio 18:</h2>
+			<h3>Solicite o nome e o preço de 5 produtos, e posteriormente apresente o nome do produto mais caro e seu
+				respectivo preço. Utilize qualquer laço de repetição</h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_16">
+				<div id="produtos">
+					<div class="produto">
+						<label for="nomeDoProduto1">Nome do Produto:</label>
+						<input type="text" id="nomeDoProduto1" name="nomeDoProduto1">
+						<br>
+						<label for="precoDoProduto1">Preço:</label>
+						<input type="number" id="precoDoProduto1" name="precoDoProduto1">
+					</div>
+				</div>
+				<div id="resposta_exercicio_16"></div>
+				<div id="mais_um_botao" class="mais_um_botao">
+					<button type="button" onclick="adicionarProduto()">Adicionar Produto</button>
+					<button type="button" onclick="produtoMaisCaro()">Verificar produto</button>
+					<button type="button" onclick="removerProduto()">Remover Produto</button>
+					<button id="reset_16" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_19">
+			<h2>Exercicio 19:</h2>
+			<h3>Calcular e apresentar o novo valor de uma calça baseada no seu tamanho. Caso seu tamanho seja até
+				38, aumento de 20 %. Entre 39 e 46, aumento de 26.4 %. Qualquer numeração acima, calcule um aumento de
+				29.08%. Obs. O tamanho deverá ser validado entre 34 e 58 (inclusive). <br> </h3>
+		</div>
+		<div class="respostas">
+			<form id="form_exercicio_17">
+				<label for="valor3">Digite o valor do produto:</label>
+				<input type="text" id="valor3">
+				<br>
+				<label for="tamanho1">Digite o tamanho:</label>
+				<input type="text" id="tamanho1">
+				<br>
+				<div id="resposta_exercicio_17"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="calculaNovoValor()">Calcular</button>
+					<button id="reset_17" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_20">
+			<h2>Exercicio 20:</h2>
+			<h3>Crie um programa em Javascript chamado Zodíaco. Este programa em Javascript deve ler a data do seu
+				aniversário e atribuir um valor para a variável inteira chamada signo, conforme lista abaixo:
+				<br> 1 º signo do zodíaco: Aquário (21/jan a 19/fev)
+				<br> 2º signo do zodíaco: Peixes (20/fev a 20/mar)
+				<br> 3º signo do zodíaco: Áries (21/mar a 20/abr)
+				<br> 4º signo do zodíaco: Touro (21/abr a 20/mai)
+				<br> 5º signo do zodíaco: Gêmeos (21/mai a 20/jun)
+				<br> 6º signo do zodíaco: Câncer (21/jun a 21/jul)
+				<br> 7º signo do zodíaco: Leão (22/jul a 22/ago)
+				<br> 8º signo do zodíaco: Virgem (23/ago a 22/set)
+				<br> 9º signo do zodíaco: Libra (23/set a 22/out)
+				<br> 10º signo do zodíaco: Escorpião (23/out a 21/nov)
+				<br> 11º signo do zodíaco: Sagitário (22/nov a 21/dez)
+				<br> 12º signo do zodíaco: Capricórnio (22/dez a 20/jan).
+			</h3>
+		</div>
+		<div class="respostas">
+			<form id="form">
+				<label for="dataNiver">Digite a data:</label>
+				<input type="text" id="dataNiver">
+				<br>
+				<label for="mesNiver">Digite o mês:</label>
+				<input type="text" id="mesNiver">
+				<br>
+				<div id="resposta_exercicio_18"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="calculaSigno()">Ver signo</button>
+					<button id="reset_18" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio" id="exercicio_21">
+			<h2>Exercicio 21:</h2>
+			<h3>Solicite 5 anos (formato AAAA) e posteriormente apresente o percentual de anos pares e a quantidade de
+				anos bissextos.</h3>
+		</div>
+		<div class="respostas">
+			<h4>Digite o ano em formato AAAA</h4>
+			<form id="form">
+				<label for="ano1">Digite o ano:</label>
+				<input type="text" id="ano1" name="ano1">
+				<br>
+				<label for="ano2">Digite o ano:</label>
+				<input type="text" id="ano2" name="ano2">
+				<br>
+				<label for="ano3">Digite o ano:</label>
+				<input type="text" id="ano3" name="ano3">
+				<br>
+				<label for="ano4">Digite o ano:</label>
+				<input type="text" id="ano4" name="ano4">
+				<br>
+				<label for="ano5">Digite o ano:</label>
+				<input type="text" id="ano5" name="ano5">
+				<br>
+				<div id="resposta_exercicio_19"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="calculaAno()">Calcular</button>
+					<button id="reset_19" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_22">
+			<h2>Exercicio 22:</h2>
+			<h3>Um usuário deseja um programa em Javascript pelo qual possa escolher que tipo de média deseja calcular a
+				partir de três notas. Faça um programa em Javascript que leia as notas, a opção escolhida pelo usuário e
+				calcule a média:
+				<br> 1- aritmética
+				<br> 2- ponderada (pesos 3, 3, 4)
+			</h3>
+		</div>
+		<div class="respostas">
+			<h4>Digite as notas:</h4>
+			<form id="form">
+				<label for="option">Escolha uma opção para cálculo da média:</label>
+				<select id="option">
+					<option value="1">1 - Aritmética</option>
+					<option value="2">2 - Ponderada</option>
+				</select>
+				<br>
+				<label for="not1">Digite a primeira nota:</label>
+				<input type="text" id="not1" name="not1">
+				<br>
+				<label for="not2">Digite a segunda nota:</label>
+				<input type="text" id="not2" name="not2">
+				<br>
+				<label for="not3">Digite a terceira nota:</label>
+				<input type="text" id="not3" name="not3">
+				<br>
+				<div id="resposta_exercicio_20"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="calculaMedia()">Calcular</button>
+					<button id="reset_20" type="reset">Reset</button>
+					<!-- <button  onclick="limpaCampos()">Limpar</button> -->
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_23">
+			<h2>Exercicio 23:</h2>
+			<h3>Construa um programa em Javascript que solicite 3 valores inteiros. Caso os mesmos sejam distintos,
+				apresente se a soma dos mesmos corresponde ou não a um número PAR.</h3>
+		</div>
+		<div class="respostas">
+			<h4>Digite 3 valores inteiros distintos:</h4>
+			<form id="form_exercicio_21">
+				<label for="valor4">1. valor:</label>
+				<input type="text" id="valor4" name="valor4">
+				<br>
+				<label for="valor5">2. valor:</label>
+				<input type="text" id="valor5" name="valor5">
+				<br>
+				<label for="valor6">3. valor:</label>
+				<input type="text" id="valor6" name="valor6">
+				<br>
+				<div id="resposta_exercicio_21"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="somaPar()">Calcular</button>
+					<button id="reset_21" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_24">
+			<h2>Exercicio 24:</h2>
+			<h3> Construa um programa em Javascript que solicite dois valores inteiros positivos (A,B). Posteriormente,
+				apresente uma mensagem “é possível dividir sem resto o valor de A por B” (caso isso seja possível) ou
+				“Não foi possível efetuar a divisão”. Obs. O valor de B deve ser menor que o valor de A.</h3>
+		</div>
+		<div class="respostas">
+			<h4>Digite 2 valores. O valor B deve ser menor que o A.</h4>
+			<form id="form">
+				<label for="a">Valor A:</label>
+				<input type="text" id="a" name="a">
+				<br>
+				<label for="b">Valor B:</label>
+				<input type="text" id="b" name="b">
+				<br>
+				<div id="resposta_exercicio_22"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="divisao()">Calcular</button>
+					<button id="reset_22" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+
+		<div class="exercicio_mais_uma_linha" id="exercicio_25">
+			<h2>Exercicio 25:</h2>
+			<h3>Faça um programa em Javascript que dada a concentração de íons H+ numa solução qualquer calcule o pH
+				desta solução e mostre se esse valor corresponde a um pH ácido, básico ou neutro.</h3>
+		</div>
+		<div class="respostas">
+			<h4>Digite a concentração: </h4>
+			<form id="form">
+				<label for="concentracaoIons">Concentração:</label>
+				<input type="text" id="concentracaoIons" name="concentracaoIons">
+				<br>
+				<div id="resposta_exercicio_23"></div>
+				<div id="mais_um_botao">
+					<button type="button" onclick="ions()">Calcular PH</button>
+					<button id="reset_23" type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+	</div>
+	<!----------------------------------------------------------------------------------------------------------------------------  -->
+	<!-- ------------------------------------------------SCRIPT-------------------------------------------------------------------- -->
+	<script>
+
+		function exibirTriplo() {
+			let numero = parseFloat(document.getElementById("numero").value);
+			let triplo = numero * 3;
+			document.getElementById("resposta_exercicio_1").innerHTML = `O triplo do número digitado é ${triplo}.`;
+		}
+
+		function exibirPorcentagem() {
+			let n1 = parseFloat(document.getElementById("n1").value);
+			let porcentagem = n1 * 0.6;
+			document.getElementById("resposta_exercicio_2").innerHTML = `O valor de 60% do número digitado é ${porcentagem}`;
+		}
+
+		function exibirNovoValor() {
+			let nomeProduto = document.getElementById("nomeProduto").value;
+			let valorProduto = parseFloat(document.getElementById("valorProduto").value);
+			let novoValor = valorProduto * 1.147;
+			document.getElementById("resposta_exercicio_3").innerHTML = `O novo valor do(a) ${nomeProduto} é ${novoValor}`;
+		}
+
+		function exibirVolume() {
+			let raio = parseFloat(document.getElementById("raio").value);
+			let altura = parseFloat(document.getElementById("altura").value);
+			let volume = ((raio * raio) * 3.1416 * altura) / 3;
+			document.getElementById("resposta_exercicio_4").innerHTML = `O volume do cone é: ${volume}`;
+		}
+
+		function par() {
+			let numero = parseFloat(document.getElementById("numero1").value);
+			if (numero % 2 == 0) {
+				document.getElementById("resposta_exercicio_5").innerHTML = "O número digitado é par"
+			} else {
+				document.getElementById("resposta_exercicio_5").innerHTML = "O número digitado é ímpar"
+			}
+		}
+
+		function aprovado() {
+			let nota1 = parseFloat(document.getElementById("nota1").value)
+			let nota2 = parseFloat(document.getElementById("nota2").value)
+			let nota3 = parseFloat(document.getElementById("nota3").value)
+			let aprovado = (nota1 + nota2 + nota3) / 3
+			if (aprovado >= 6.0) {
+				document.getElementById("resposta_exercicio_6").innerHTML = "Aluno Aprovado"
+			} else {
+				document.getElementById("resposta_exercicio_6").innerHTML = "Aluno Reprovado"
+			}
+		}
+
+		function salario() {
+			let nomePessoa1 = document.getElementById("nomePessoa1").value
+			let sexo = document.getElementById("sexo").value
+			sexo = sexo.toUpperCase();
+			let idade = parseFloat(document.getElementById("idade").value)
+			let salario = parseFloat(document.getElementById("salario").value)
+
+			if (sexo !== 'F' && sexo !== 'M') {
+				sexo.value = ""
+				alert("Digite M ou F")
+				document.getElementById("sexo").value = ""
+			}
+
+			if (idade > 50) {
+				salario *= 1.35
+				document.getElementById("resposta_exercicio_7").innerHTML = `O novo salário de ${nomePessoa1} é: ${salario}`
+			}
+			if (sexo === 'F' && idade < 24) {
+				salario *= 1.18
+				document.getElementById("resposta_exercicio_7").innerHTML = `O novo salário de ${nomePessoa1} é: ${salario}`
+			}
+			if (sexo === 'M' && idade < 27) {
+				salario *= 1.175
+				document.getElementById("resposta_exercicio_7").innerHTML = `O novo salário de ${nomePessoa1} é: ${salario}`
+			}
+			if ((sexo === 'F' && 25 <= idade && idade <= 50) || (sexo == 'M' && idade >= 39 && idade <= 50)) {
+				salario *= 1.23
+				document.getElementById("resposta_exercicio_7").innerHTML = `O novo salário de ${nomePessoa1} é: ${salario}`
+			}
+			if (sexo === 'M' && idade >= 28 && idade <= 38) {
+				salario *= 1.21
+				document.getElementById("resposta_exercicio_7").innerHTML = `O novo salário é: ${salario}`
+			}
+		}
+
+		function multiplica() {
+			let valor1 = parseFloat(document.getElementById("valor1").value)
+			let valor2 = parseFloat(document.getElementById("valor2").value)
+			let soma = 0
+			for (let i = 0; i < valor2; i++) {
+				soma = soma + valor1;
+			}
+			document.getElementById("resposta_exercicio_8").innerHTML = `A multiplicação dos números é: ${soma}`
+		}
+
+		function primo() {
+			let num = parseFloat(document.getElementById("num").value);
+			let isPrimo = true;
+
+			if (num < 2) {
+				isPrimo = false;
+			} else if (num === 2 || num === 3) {
+				isPrimo = true;
+			} else if (num % 2 === 0 || num % 3 === 0) {
+				isPrimo = false;
+			} else {
+				for (let i = 5; i <= Math.sqrt(num); i += 2) {
+					if (num % i === 0) {
+						isPrimo = false;
+						break;
+					}
+				}
+			}
+			if (isPrimo) {
+				document.getElementById("resposta_exercicio_9").innerHTML = `O número ${num} é primo.`;
+			} else {
+				document.getElementById("resposta_exercicio_9").innerHTML = `O número ${num} não é primo.`;
+			}
+		}
+
+		function parComFor() {
+			let num1 = parseFloat(document.getElementById("num1").value)
+			let num2 = parseFloat(document.getElementById("num2").value)
+
+			if (num2 < num1) {
+				alert("O segundo número deve ser maior que o primeiro!")
+			} else {
+				let pares = [];
+				for (let i = num1; i <= num2; i++) {
+					if (i % 2 === 0) {
+						pares.push(i)
+					}
+				}
+				document.getElementById("resposta_exercicio_10").innerHTML = `Números pares: ${pares}`
+			}
+		}
+
+		//Exercício 13
+		function parComWhile() {
+			let num3 = parseFloat(document.getElementById("num3").value)
+			let num4 = parseFloat(document.getElementById("num4").value)
+
+			if (num4 < num3) {
+				alert("O segundo número deve ser maior que o primeiro!")
+			} else {
+				let pares = [];
+				let i = num3;
+				while (i <= num4) {
+					if (i % 2 === 0) {
+						pares.push(i)
+					}
+					i++
+				}
+				document.getElementById("resposta_exercicio_11").innerHTML = `Números pares: ${pares}`
+			}
+		}
+
+		//Exercício 14
+		function parComDoWhile() {
+			let num5 = parseFloat(document.getElementById("num5").value)
+			let num6 = parseFloat(document.getElementById("num6").value)
+
+			if (num6 < num5) {
+				alert("O segundo número deve ser maior que o primeiro!")
+			} else {
+				let pares = [];
+				let i = num5;
+				console.log(i)
+				do {
+					if (i % 2 === 0) {
+						pares.push(i)
+						console.log(pares)
+					}
+					i++
+				} while (i <= num6)
+				document.getElementById("resposta_exercicio_12").innerHTML = `Números pares: ${pares}`
+			}
+		}
+
+		//Exercício 15
+		function nomeMes(event) {
+			if (event) {
+				event.preventDefault();
+			}
+			let mesSelecionado = parseFloat(document.getElementById("meses").value)
+			console.log(mesSelecionado)
+			let nomeDoMes;
+
+			switch (mesSelecionado) {
+				case 1:
+					nomeDoMes = "Janeiro";
+					break;
+				case 2:
+					nomeDoMes = "Fevereiro";
+					break;
+				case 3:
+					nomeDoMes = "Março";
+					break;
+				case 4:
+					nomeDoMes = "Abril";
+					break;
+				case 5:
+					nomeDoMes = "Maio";
+					break;
+				case 6:
+					nomeDoMes = "Junho";
+					break;
+				case 7:
+					nomeDoMes = "Julho";
+					break;
+				case 8:
+					nomeDoMes = "Agosto";
+					break;
+				case 9:
+					nomeDoMes = "Setembro";
+					break;
+				case 10:
+					nomeDoMes = "Outubro";
+					break;
+				case 11:
+					nomeDoMes = "Novembro";
+					break;
+				case 12:
+					nomeDoMes = "Dezembro";
+					break;
+				default:
+					nomeDoMes = "Mês inválido";
+					break;
+			}
+			document.getElementById("resposta_exercicio_13").innerHTML = `O mês correspondente é: ${nomeDoMes}`
+			console.log(nomeDoMes)
+		}
+		//Exercício 16
+		function maiorNumero() {
+			let arrayNumeros = [];
+			arrayNumeros.push(parseFloat(document.getElementById("num7").value));
+			arrayNumeros.push(parseFloat(document.getElementById("num8").value));
+			arrayNumeros.push(parseFloat(document.getElementById("num9").value));
+			arrayNumeros.push(parseFloat(document.getElementById("num10").value));
+
+			let maiorNumero = arrayNumeros[0];
+			for (let i = 0; i < arrayNumeros.length; i++) {
+				if (arrayNumeros[i] > maiorNumero) {
+					maiorNumero = arrayNumeros[i];
+				}
+			}
+			document.getElementById("resposta_exercicio_14").innerHTML = `O maior número digitado é: ${maiorNumero}`
+		}
+
+		//Exercício 17
+		function maiorNome() {
+			let arrayNomes = [];
+			arrayNomes.push(document.getElementById("nome1").value)
+			arrayNomes.push(document.getElementById("nome2").value)
+			arrayNomes.push(document.getElementById("nome3").value)
+			arrayNomes.push(document.getElementById("nome4").value)
+
+			let arrayNomesOrdenados = arrayNomes.slice().sort()
+
+			document.getElementById("resposta_exercicio_15").innerHTML = `O maior nome é: ${arrayNomesOrdenados[3]}`
+		}
+
+		//Exercício 18
+		let contadorDeProdutos = 1;
+
+
+		function adicionarProduto() {
+			contadorDeProdutos++;
+
+			let produtos = document.getElementById("produtos");
+			let novoProduto = document.createElement("div");
+			novoProduto.classList.add("produto");
+			novoProduto.innerHTML = `
+    <label for="nomeDoProduto${contadorDeProdutos}">Nome do Produto:</label>
+    <input type="text" id="nomeDoProduto${contadorDeProdutos}" name="nomeDoProduto${contadorDeProdutos}">
+	<br>
+    <label for="precoDoProduto${contadorDeProdutos}">Preço:</label>
+    <input type="number" step="0.01" id="precoDoProduto${contadorDeProdutos}" name="precoDoProduto${contadorDeProdutos}">
+  `;
+			produtos.appendChild(novoProduto);
+		}
+
+		function removerProduto() {
+			const produtosDiv = document.getElementById("produtos");
+			const produtos = produtosDiv.querySelectorAll(".produto");
+
+			if (produtos.length > 1) {
+				for (let i = 1; i < produtos.length; i++) {
+					produtos[i].remove();
+				} }else {
+					alert("Não há mais produtos para remover.");
+				}
+			}
+
+
+			function produtoMaisCaro() {
+				let produtos = [];
+				for (let i = 1; i <= contadorDeProdutos; i++) {
+					let nomeDoProduto = document.getElementById(`nomeDoProduto${i}`).value;
+					let preco = parseFloat(document.getElementById(`precoDoProduto${i}`).value);
+					produtos.push({ nome: nomeDoProduto, preco: preco });
+				}
+
+				let produtoMaisCaro = produtos.reduce((produtoAtual, produtoSeguinte) => {
+					return produtoAtual.preco > produtoSeguinte.preco ? produtoAtual : produtoSeguinte;
+				});
+
+				document.getElementById("resposta_exercicio_16").innerHTML = `O produto mais caro é ${produtoMaisCaro.nome} que custa
+			${produtoMaisCaro.preco}`;
+			}
+
+			// function resetCampos() {
+			// 	let removeCampos = document.getElementsByClassName("produto")
+			// 	// while (removeCampos.length > 1) {
+			// 	// 	removeCampos[0].remove()
+			// 	for (let i = removeCampos.length; i > 0; i--) {
+			// 		removeCampos[0].remove()
+			// 	}
+			// }
+
+			//Exercício 19
+			function calculaNovoValor() {
+				let valor3 = parseFloat(document.getElementById("valor3").value);
+				let tamanho1 = parseFloat(document.getElementById("tamanho1").value);
+				let novoValor
+
+				if (isNaN(valor3) || isNaN(tamanho1)) {
+					alert("Somente valores numéricos")
+				} else if (tamanho1 >= 59 || tamanho1 <= 33) {
+					alert("Tamanho deverá estar entre 34 e 58")
+				} else if (tamanho1 <= 38) {
+					novoValor = valor3 * 1.2
+				} else if (tamanho1 > 38 && tamanho1 <= 46) {
+					novoValor = valor3 * 1.264
+				} else if (tamanho1 > 46) {
+					novoValor = valor3 * 1.2908
+				}
+
+				if (novoValor !== undefined) {
+					document.getElementById("resposta_exercicio_17").innerHTML = `O novo valor da calça é: ${novoValor}`
+				}
+			}
+
+			//Exercício 20
+			function calculaSigno() {
+				let diaNiver = parseInt(document.getElementById("dataNiver").value);
+				let mesNiver = parseInt(document.getElementById("mesNiver").value);
+				let signo;
+				console.log(diaNiver, mesNiver)
+				if ((diaNiver >= 21 && mesNiver == 1) || (diaNiver <= 19 && mesNiver == 2)) {
+					signo = "Aquário"
+				} else if ((diaNiver >= 20 && mesNiver == 2) || (diaNiver <= 20 && mesNiver == 3)) {
+					signo = "Peixes"
+				} else if ((diaNiver >= 21 && mesNiver == 3) || (diaNiver <= 20 && mesNiver == 4)) {
+					signo = "Áries"
+				} else if ((diaNiver >= 21 && mesNiver == 4) || (diaNiver <= 20 && mesNiver == 5)) {
+					signo = "Touro"
+				} else if ((diaNiver >= 21 && mesNiver == 5) || (diaNiver <= 20 && mesNiver == 6)) {
+					signo = "Gêmeos"
+				} else if ((diaNiver >= 21 && mesNiver == 6) || (diaNiver <= 21 && mesNiver == 7)) {
+					signo = "Câncer"
+				} else if ((diaNiver >= 22 && mesNiver == 7) || (diaNiver <= 22 && mesNiver == 8)) {
+					signo = "Leão"
+				} else if ((diaNiver >= 23 && mesNiver == 8) || (diaNiver <= 22 && mesNiver == 9)) {
+					signo = "Virgem"
+				} else if ((diaNiver >= 23 && mesNiver == 9) || (diaNiver <= 22 && mesNiver == 10)) {
+					signo = "Libra"
+				} else if ((diaNiver >= 23 && mesNiver == 10) || (diaNiver <= 21 && mesNiver == 11)) {
+					signo = "Escorpião"
+				} else if ((diaNiver >= 22 && mesNiver == 11) || (diaNiver <= 21 && mesNiver == 12)) {
+					signo = "Sagitário"
+				} else if ((diaNiver >= 22 && mesNiver == 12) || (diaNiver <= 20 && mesNiver == 1)) {
+					signo = "Capricórnio"
+				} else {
+					signo = "Data inválida"
+				}
+				document.getElementById("resposta_exercicio_18").innerHTML = `O seu signo é: ${signo}`
+			}
+
+			//Exercício 21
+			function calculaAno() {
+				let anos = [];
+				let anosPares = 0;
+				let anosBissextos = 0;
+
+				anos.push(parseFloat(document.getElementById("ano1").value));
+				anos.push(parseFloat(document.getElementById("ano2").value));
+				anos.push(parseFloat(document.getElementById("ano3").value));
+				anos.push(parseFloat(document.getElementById("ano4").value));
+				anos.push(parseFloat(document.getElementById("ano5").value));
+
+				for (let i = 0; i < anos.length; i++) {
+					let anoString = anos[i].toString();
+					if (anoString.length !== 4) {
+						alert("Digite o ano com 4 dígitos")
+						return;
+					}
+					if (anos[i] % 2 === 0) {
+						anosPares++;
+						console.log(anosPares);
+					}
+					if (anos[i] % 4 === 0) {
+						anosBissextos++;
+						console.log(anosBissextos);
+					}
+				}
+				let mediaPares = (anosPares / (anos.length)) * 100;
+				document.getElementById("resposta_exercicio_19").innerHTML = `O percentual de anos pares é: ${mediaPares}%
+			e a quantidade de anos bissextos é(são) ${anosBissextos} anos`
+			}
+
+			//Exercício 22
+			function atualizaResposta(tipoMedia, media) {
+				document.getElementById("resposta_exercicio_20").innerHTML = `A média ${tipoMedia} é: ${media}`;
+			}
+
+			function calculaMedia() {
+				let not1 = parseFloat(document.getElementById("not1").value)
+				let not2 = parseFloat(document.getElementById("not2").value)
+				let not3 = parseFloat(document.getElementById("not3").value)
+				let option = parseInt(document.getElementById("option").value)
+				let media = 0;
+				let tipoMedia;
+
+				switch (option) {
+					case 1:
+						tipoMedia = "aritmética"
+						media = (not1 + not2 + not3) / 3.0;
+						break;
+					case 2:
+						tipoMedia = "ponderada"
+						media = (not1 * 3 + not2 * 3 + not3 * 4) / 10.0;
+						break;
+					default:
+						alert("Digite uma opção válida");
+						break;
+				}
+				// console.log(not1)
+				// console.log(not2)
+				// console.log(not3)
+				// console.log(option)
+				// console.log(media)
+				// atualizaResposta(tipoMedia, media)
+				document.getElementById("resposta_exercicio_20").innerHTML = `A média ${tipoMedia} é: ${media}`;
+			}
+
+			// function limpaCampos() {
+			// 	document.getElementById("not1").value = "";
+			// 	document.getElementById("not2").value = "";
+			// 	document.getElementById("not3").value = "";
+			// 	document.getElementById("option").value = "";
+			// 	document.getElementById("resposta_exercicio_20").innerHTML = "";
+
+			// 	atualizaResposta("", "");
+			// }
+
+			// // let button = document.createElement("button");
+			// // button.innerHTML = "Calcular";
+			// // button.onclick = calculaMedia();
+			// // document.getElementById("mais_um_botao").appendChild(button);
+
+
+			//Exercício 23
+			function somaPar() {
+				let valores = [];
+				let valoresDigitados = [];
+				valoresDigitados.push(parseInt(document.getElementById("valor4").value));
+				valoresDigitados.push(parseInt(document.getElementById("valor5").value));
+				valoresDigitados.push(parseInt(document.getElementById("valor6").value));
+
+				for (let i = 0; i < valoresDigitados.length; i++) {
+					if (valores.includes(valoresDigitados[i])) {
+						alert("Número já digitado");
+						return;
+					} else {
+						valores.push(valoresDigitados[i]);
+					}
+				}
+
+				let soma = valoresDigitados.reduce(function (a, b) {
+					return a + b;
+				}, 0);
+
+				if (soma % 2 === 0) {
+					document.getElementById("resposta_exercicio_21").innerHTML = "A soma dos valores é par";
+				} else {
+					document.getElementById("resposta_exercicio_21").innerHTML = "A soma dos valores é ímpar";
+				}
+			}
+
+			//Exercicio 24
+			function divisao() {
+				let a = parseInt(document.getElementById("a").value);
+				let b = parseInt(document.getElementById("b").value);
+
+				if (a < 0 || b <= 0) {
+					alert("O número deve ser positivo");
+					return;
+				}
+				if (a < b) {
+					alert("O segundo número deve menor do que o primeiro");
+					return;
+				} else if (a % b === 0) {
+					document.getElementById("resposta_exercicio_22").innerHTML = "É possível dividir sem resto o valor de A por B";
+				} else {
+					document.getElementById("resposta_exercicio_22").innerHTML = "Não foi possível efetuar a divisão";
+				}
+			}
+
+			function ions() {
+				// Como calcular pH a partir da concentração?
+				// As fórmulas para calcular pH e pOH são: pH = -log [H+], pOH = -log [oH-], [H+] = 10-pH ou 
+				// [OH-] = 10-poH, pH + pOH = 14.
+				let concentracaoIons = parseFloat(document.getElementById("concentracaoIons").value);
+				let ph = -Math.log(concentracaoIons);
+				ph = ph.toFixed(2);
+
+				if (ph < 7) {
+					document.getElementById("resposta_exercicio_23").innerHTML = "ph Ácido";
+				} else if (ph > 7) {
+					document.getElementById("resposta_exercicio_23").innerHTML = "ph Básico";
+				} else {
+					document.getElementById("resposta_exercicio_23").innerHTML = "ph Neutro";
+				}
+			}
+
+			function resetBtn() {
+				const resetBtns = document.querySelectorAll("[id^='reset_']");
+
+				resetBtns.forEach(function (btn) {
+					btn.addEventListener("click", function () {
+						const form = btn.closest("form");
+						const respostaDiv = form.querySelector("[id^='resposta_exercicio_']");
+						respostaDiv.innerHTML = "";
+					});
+				});
+			}
+			resetBtn();
+
+	</script>
+
+</body>
+
+</html>

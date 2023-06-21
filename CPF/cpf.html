@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cpf.css">
+    <title>Validador de CPF</title>
+</head>
+<body>
+    <div class="cpf">
+        <label for="cpf" class="cpf-content">Digite seu CPF:</label>
+        <input id="cpf" class="cpf-content" type="text" autocomplete="off"></input>
+        <div class="button-container">
+            <button id="processar" class="cpf-button">Processar</button>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <button id="close-modal">OK</button>
+        </div>
+    </div>
+    <script src="cpf.js"></script>
+</body>
+</html>
